@@ -1,4 +1,4 @@
-export function compareComponentTypes(a, b) {
+export function compareComponentTypes(a: any, b: any) {
   // TODO: Using `displayName` here is a result of a bug in HMR:
   // https://github.com/gaearon/react-hot-loader/issues/304
   if (!a || !b) {
@@ -9,6 +9,6 @@ export function compareComponentTypes(a, b) {
   return aName === bName
 }
 
-function unnestHmrType(type) {
+function unnestHmrType(type: any) {
   return type.name === 'ProxyFacade' ? type.displayName : type.name
 }
