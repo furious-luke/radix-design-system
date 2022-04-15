@@ -2,11 +2,11 @@ import {styled} from '../stitches.config'
 
 export const Section = styled('article', {
   overflow: 'clip',
-  padding: '$1',
+  padding: '$2',
   '@bp1': {
-    padding: '$2',
+    padding: '$3',
   },
   '@bp2': {
-    padding: '$3',
+    padding: '$4',
   },
 })
