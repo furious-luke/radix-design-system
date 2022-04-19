@@ -151,13 +151,15 @@ export const StyledInput = styled('input', {
 })
 
 const Wrapper = styled('span', {
+  display: 'inline-block',
   position: 'relative',
   color: '$hiContrast',
+  lineHeight: 1,
 })
 
 const LeftEnhancer = styled('span', {
   position: 'absolute',
-  top: 4,
+  lineHeight: 1,
   left: 7,
   '& > *:first-child': {
     width: '100%',
@@ -166,10 +168,12 @@ const LeftEnhancer = styled('span', {
   variants: {
     size: {
       '1': {
+        top: 5,
         width: 15,
         height: 15,
       },
       '2': {
+        top: 9,
         width: 18,
         height: 18,
       },
